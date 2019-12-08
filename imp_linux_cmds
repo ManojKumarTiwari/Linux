@@ -1,0 +1,22 @@
+Important Linux commands
+
+whoami
+ls
+ps - To check the processes you are running, execute "ps" command on the shell.
+cd <path> - Note: To change the directory to your home directory use only cd command without any arguments.
+pwd - To see the present working directory use: pwd
+
+Note: "/" is the root directory
+
+clear
+
+mkdir <directory-name>
+mkdir -p dir1/dir2/dir3 - to create a directory within the directory
+
+man <command> - To learn more about any command (i.e mkdir,cd etc) using manual
+
+rm - to delete file
+rm -r - to delete directory
+
+
+
