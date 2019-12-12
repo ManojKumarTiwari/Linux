@@ -88,6 +88,17 @@ ln orig_text mylink - If you want to give multiple names to a single file withou
 ln -s orig_text1 myslink - symbolic link
 readlink -f /usr/bin/java - deference original file of a symbolic link, you can use readlink command
 
+TOPIC -> Chaining Unix Commands
+Say, you want to execute a command only if another command is successful then you use &&.
+
+And if you want a command to be executed if another command has failed, you use ||.
+
+TOPIC -> Redirecting the output of a program
+myprogram > myfile
+
+TOPIC -> Pipes - Introduction
+
+
 
 
 
