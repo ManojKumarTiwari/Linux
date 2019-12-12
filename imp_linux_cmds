@@ -23,7 +23,94 @@ touch myemptyfile.txt
 Note: There are many editors in Linux such as nano, pico, vi, emacs
 nano myfirstfile.txt
 
-cp myfirstfile.txt myfirstfile_copy.txt
+cp myfirstfile.txt myfirstfile_copy.txt - make copy of file
+cp myfirstfile.txt myproject - make copy of file in the provided directory
+cp -r src proj - Copy a directory into another directory
+
+Note: mv command is used to move or rename files and directories.
+mv myfirstfile.txt firstfile.txt - rename myfirstfile.txt to firstfile.txt.
+mv firstfile.txt mywork - Move a file to folder 
+
+cat myfirstfile_copy.txt - cat you can see the whole content of the file
+more myfirstfile_copy.txt - For the huge file, you can use the more command which would display the content of a file in a paginated way
+tail myfirstfile_copy.txt
+tail -20 myfirstfile_copy.txt - By default tail shows you only last 10 lines, you can change it using command line option. For example, to see last 20 lines, you can use
+tail -f myfirstfile_copy.txt - If you want to chase a file - continuously print newlines appended to the file
+head -20 myfirstfile_copy.txt - If you are interested in first few lines, you can use head. By default By default head shows you only first 10 lines, you can change it using command line option. For example, to see first 20 lines, you can use
+
+find . -name '*.txt' - to find all the text files in current directory
+
+grep myword file1 file2 - Grep lists all the lines from files in which a particular word exists
+grep -r myword directory - If you want to search in files recursively - inside every subdirectory of a directory
+grep -i myword file1 file2 - If you want to search case insensitive
+
+Note: To find the number of characters, words, and lines, use wc command
+wc -l <filename>
+
+ls -la <filename>
+ls -la
+
+chmod u+r <filename> // Note: u-user,g-group,o-others, r-read,w-write,x-execute
+chmod 754 <filename>
+
+sudo, sudoedit, chown, chgrp
+
+ps aux - To see all of the processes by all users
+top - To continuously monitor all processes
+
+mycmd & - To run a program in the background, put an '&' in the end of the command
+sleep 1000 & - Send a process in background
+
+kill processid
+kill -9 processid
+
+jobs
+fg %jobid 
+fg jobid - To bring a process to foreground
+
+nohup 
+screen - To keep a process running in the background even if the shell has been disconnected
+pstree - o see the tree of processes
+
+Note: follow below steps to write shell script 
+nano myfirstscript.sh
+// then write and save the code
+to run shell script
+./myfirstfile.sh
+
+echo $?- Every program return a value to operating system. It is also referred as exit status. In linux, a program returns 0 if successful. Otherwise a non-zero error number. To check the return value of previous command
+
+TOPIC -> Networking: Sockets and ports
+nc computer_name(or ip_address) port_number
+
+TOPIC -> Files & Directories: linking
+ln orig_text mylink - If you want to give multiple names to a single file without copying the content, you can create the link. (hard link)
+ln -s orig_text1 myslink - symbolic link
+readlink -f /usr/bin/java - deference original file of a symbolic link, you can use readlink command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
