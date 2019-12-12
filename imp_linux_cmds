@@ -18,5 +18,12 @@ man <command> - To learn more about any command (i.e mkdir,cd etc) using manual
 rm - to delete file
 rm -r - to delete directory
 
+touch myemptyfile.txt
+
+Note: There are many editors in Linux such as nano, pico, vi, emacs
+nano myfirstfile.txt
+
+cp myfirstfile.txt myfirstfile_copy.txt
+
 
 
